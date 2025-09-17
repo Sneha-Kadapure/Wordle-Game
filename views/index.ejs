@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div  class="mainContainer">
+        <h1>Wordle Game</h1>
+        <div class="wordContainer">
+            <% for(var i=0;i<30;i++){ %>
+                <div class="cell"></div>
+                <% } %>
+        </div>
+        <div class="firstKeyboard">
+              <% const firstRow = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P"]; %>
+            <% for(var i=0;i<10;i++){ %>
+                    <div class="keys">
+                        <%=firstRow[i]%>
+                    </div>
+                    <% } %>
+        </div>
+        <div class="secondKeyboard">
+            <% const secondRow = ["A", "S", "D", "F", "G", "H", "J", "K", "L"]; %>
+            <% for(var i=0;i<9;i++){ %>
+                    <div class="keys">
+                        <%=secondRow[i]%>
+                    </div>
+                    <% } %>
+        </div>
+        <div class="thirdKeyboard">
+            <% const thirdRow = ["Z", "X", "C", "V", "B", "N", "M"]; %>
+            <% for(var i=0;i<7;i++){ %>
+                    <div class="keys">
+                        <%=thirdRow[i]%>
+                    </div>
+                    <% } %>
+        </div>
+    </div>
+    <script src="working.js"></script>
+</body>
+
+</html>
