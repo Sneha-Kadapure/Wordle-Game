@@ -18,6 +18,7 @@ let str = "";
 let currentIndex = 0;
 
 
+
 keys.forEach(key => {
     key.addEventListener("click", function () {
         if (currentIndex < 5 * n) {
