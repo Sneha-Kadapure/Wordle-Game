@@ -1,27 +1,31 @@
 .mainContainer {
     display: flex;
     flex-direction: column; 
-    align-items: center;    
+    align-items: center;  
+    height: 0vh; 
+    margin-top: 20px;
 }
+
+
 
 .cell {
     background: #456882;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
     border-radius: 5px;
     color: white;
-    font-size: 85px;
+    font-size: 65px;
     text-align: center;
     font-family: serif;
 }
 
 .keys {
     background: #1B3C53;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border-radius: 5px;
     color: white;
-    font-size: 85px;
+    font-size: 75px;
     text-align: center;
     font-family: serif;
 }
@@ -40,13 +44,14 @@ button {
 
 .wordContainer {
     display: grid;
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(6, 100px);
-    height: 600px;
-    width: 500px;
-    gap: 4px;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    grid-template-columns: repeat(5, 90px);
+    grid-template-rows: repeat(6, 90px);
+    height: 450px;
+    width: 375px;
+    gap: 0px;
+    margin-bottom: 55px;
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .firstKeyboard {
@@ -55,6 +60,7 @@ button {
     height: 100px;
     width: 1000px;
     gap: 4px;
+    margin-top: 70px;
     margin-bottom: 10px;
 }
 
@@ -86,6 +92,16 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 90px;
     margin-left: 70px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .green{
@@ -98,5 +114,9 @@ h1 {
 
 .gray{
     background-color: gray;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.845);
 }
 
