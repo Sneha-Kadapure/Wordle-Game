@@ -7,17 +7,19 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// middleware
-app.use(express.static("public"));
+// ✅ Serve static files correctly
+app.use(express.static(path.join(__dirname, "public")));
+
+// EJS setup
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-// routes
+// Routes
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-// ✅ LOCAL ONLY: listen on port
+// Local only
 if (process.env.NODE_ENV !== "production") {
   const PORT = 3000;
   app.listen(PORT, () => {
@@ -25,8 +27,9 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-// ✅ REQUIRED for Vercel
+// Required for Vercel
 export default app;
+
 
 
 
